@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> sign up form</title>
+        <link rel="stylesheet" type="text/css" href="projectstyles.css" />
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+                <h2>HOMELETT</h2>
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-button" onclick="login()"> LOGIN</button>
+                    <button type="button" class="toggle-button"onclick="register()"> REGISTER</button>
+                </div>
+                <div class="social-icons">
+                    <img src="images/google.png">
+                    <img src="images/insta.png">
+                    <img src="images/facebk.png">
+                    <img src="images/twitter.png">
+                </div>
+                <form  id="login"class="inputs">
+                    <img src="images/user-icon.png">
+                    <input type="text" class="input-field" placeholder="UserName" required>
+                    <img src="images/pswd-icon.png">
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box" ><span>Remember Me</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <a href="#bookmark-register">
+                <form  action="index.php" method="post" id="register"class="inputs">
+                    <input type="text" name="name" class="input-field" placeholder="UserName" required>
+                    <input type="email" name="email"class="input-field" placeholder="Email ID" required>
+                    <input type="text" name="phone" class="input-field" placeholder="Phone Number" required>
+                    <input type="password" name="pswd" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" name="pswd" class="input-field" placeholder="Confirm Password" required>
+                    <input type="checkbox" class="check-box" ><span>I Agree to the Terms of Service</span>
+                    <button type="submit" name="submit"class="submit-btn">Register</button>
+                </form>
+            </a>
+            </div>
+           
+        </div>
+        <script>
+            var x= document.getElementById("login")
+            var y= document.getElementById("register")
+            var z= document.getElementById("btn")
+            function register(){
+                x.style.left ="-400px"
+                y.style.left ="50px"
+                z.style.left ="110px"
+            }
+            function login(){
+                x.style.left ="50px"
+                y.style.left ="450px"
+                z.style.left ="0px"
+            }
+                    </script>
+                      </body>
+</html>
